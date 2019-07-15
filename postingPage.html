@@ -1,42 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>TossYourSauce - Create Post</title>
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/tossmysauce.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>TossYourSauce - Create Post</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/tossmysauce.css">
+</head>
 
-    <body>
-        <div class="container-fluid banner-container">
-            <div class="row">
-                <div class="col-10">
-                    <h1>Toss Your Sauce</h1>
-                    <button type="button" class="btn btn-link pt-0">Visit our new forum</button>
-                </div>
-
-                <div class="col-2 align-self-end">
-                    <button type="button" class="btn btn-outline-primary account-button float-right">My Account</button>
-                </div>
-            </div>
+<body>
+<div class="container-fluid banner-container">
+    <div class="row">
+        <div class="col-10">
+            <h1>Toss Your Sauce</h1>
+            <button type="button" class="btn btn-link pt-0">Visit our new forum</button>
         </div>
-    <hr>
 
-    <div class="container-fluid">
-
-        <br>
-        <br>
-        <h1 class = "text-center"> Create Saucy Post</h1>
-
-        <div class  = "row">
-
-
+        <div class="col-2 align-self-end">
+            <button type="button" class="btn btn-outline-primary account-button float-right">My Account</button>
         </div>
     </div>
+</div>
+<hr>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
-    </body>
+<div class="container ">
+
+    <br>
+    <br>
+    <h1 class = "text-center"> Create Saucy Post</h1>
+    <br>
+    <br>
+
+    <div class  = " col w-80 ">
+
+        <table class="table table-striped ">
+
+            <thead>
+            <tr>
+                <td scope="col">Name</td>
+                <td scope="col">
+                    <input type="text" class="form-control " placeholder="Post Title">
+                </td>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td scope="col">Description</td>
+                <td scope="col">
+                    <div class="form-group">
+                        <label for="comment">Comment:</label>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+
+            <thead>
+            <tr>
+                <td scope="col">Category</td>
+                <td scope="col">
+                    <div class="form-check ">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                        <label class="form-check-label" for="exampleRadios1">
+                            Dipping Sauce
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Cooking Sauce
+                        </label>
+                    </div>
+                    <div class="form-check ">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                        <label class="form-check-label" for="exampleRadios3">
+                            Marinade
+                        </label>
+                    </div>
+                </td>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td scope="col">Tags</td>
+                <td scope="col">
+                    <input type="text" class="form-control  username" placeholder="Username">
+                </td>
+            </tr>
+            </tbody>
+
+            <thead>
+            <tr>
+                <td scope="col">Pictures</td>
+                <td scope="col">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlFile1">Example file input</label>
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                    </form>
+                </td>
+            </tr>
+            </thead>
+        </table>
+        <hr>
+
+    </div>
+    <button class="btn btn-primary float-right mb-5" type="submit">Button</button>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
 </html>
