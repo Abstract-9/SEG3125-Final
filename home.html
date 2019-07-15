@@ -11,11 +11,11 @@
 <div class="container-fluid banner-container">
     <div class="row">
         <div class="col-10 pt-2">
-            <h1>Toss Your Sauce</h1>
-            <button type="button" class="btn btn-link pt-0">Visit our new forum</button>
+            <h1><a href="home.html" style="text-decoration: none;color:black;">Toss Your Sauce</a></h1>
+            <button type="button" class="btn btn-link pt-0" onclick="window.location.href='forum-home.html'">Visit our new forum</button>
         </div>
         <div class="col-2 align-self-end">
-            <button type="button" class="btn btn-outline-primary account-button">My Account</button>
+            <button type="button" class="btn btn-outline-primary account-button" onclick="signInClick()">My Account</button>
         </div>
     </div>
 </div>
@@ -27,7 +27,7 @@
             <div class="input-group mb-3 mt-3">
                 <input type="text" class="form-control" placeholder="Pesto...">
                 <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button" id="search">Search</button>
+                    <button class="btn btn-outline-secondary" type="button" id="search" onclick="window.location.href = 'search.html'">Search</button>
                 </div>
             </div>
         </div>
@@ -76,7 +76,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Is your sauce making people happy?</h5>
                         <p class="card-text">Find out by creating a poll on our new forums! Let the sauce community decide.</p>
-                        <a href="#" class="btn btn-primary">To the forums!</a>
+                        <a href="forum-home.html" class="btn btn-primary">To the forums!</a>
                     </div>
                 </div>
             </div>
