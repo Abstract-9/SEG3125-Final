@@ -13,18 +13,22 @@
     margin: 0.5em auto auto;
 }
 
-.banner-container{
+.star-black{
+    display:inline;
+}
 
+.star-black:after{
+    content: ' \2605'
+}
+
+.star-white{
+    display:inline;
+}
+
+.star-white:after{
+    content: ' \2606'
 }
 
 .account-button{
     margin-bottom: 3px;
-}
-
-.img1{
-    flex: 1.7779
-}
-
-.img2{
-    flex: 1.3333
 }
