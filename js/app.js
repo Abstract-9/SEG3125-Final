@@ -17,9 +17,13 @@ function signInClick(){
 
 function submitSauce(){
     let sauce = {};
-    sauce.name = name;
-    sauce.desc = desc;
+    sauce.name = $("#name").val();
+    sauce.desc = $("#comment").val();
+    sauce.category = $('input[name=exampleRadios]:checked').val();
+    sauce.tags = abc; //TODO
+
 }
+
 
 function loadDB(){
     return JSON.parse(localStorage.getItem("db"));
