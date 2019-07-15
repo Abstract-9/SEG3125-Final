@@ -15,6 +15,12 @@ function signInClick(){
     }
 }
 
+function submitSauce(){
+    let sauce = {};
+    sauce.name = name;
+    sauce.desc = desc;
+}
+
 function loadDB(){
     return JSON.parse(localStorage.getItem("db"));
 }
