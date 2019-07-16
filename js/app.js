@@ -84,7 +84,7 @@ function submitSauce(){
     sauce.name = $("#name").val();
     sauce.desc = $("#comment").val();
     sauce.category = $('input[name=exampleRadios]:checked').val();
-    sauce.tags = $('#tags');
+    sauce.tags = $('#tags').val().replace(' ', ', ');
     let db = loadDB();
     db.sauce = sauce;
     storeDB(db);
