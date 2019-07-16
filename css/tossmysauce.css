@@ -25,10 +25,19 @@
     display:inline;
 }
 
+.remove:after{
+    content: '\2573';
+}
+
+.remove:hover::after{
+    content: '\2573';
+    color: red;
+}
+
 .star-white:after{
     content: ' \2606'
 }
 
-.account-button{
+.account-button, .logout{
     margin-bottom: 3px;
 }

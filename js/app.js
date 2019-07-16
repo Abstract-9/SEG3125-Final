@@ -111,14 +111,15 @@ function appendSauce(selector){
 
                 </td>
 
-                <td scope="col"><div class="row">
+                <td><div class="row">
 
-                    <p style="display:inline" class="pr-2">${db.sauce.name}</p>
+                    <p style="display:inline" class="pr-2 w-25">${db.sauce.name}</p>
                     <p class="star-black"></p>
                     <p class="star-black"></p>
                     <p class="star-black"></p>
                     <p class="star-white"></p>
                     <p class="star-white"></p>
+                    <p class="remove"></p>
 
                 </div></td>
             </tr>`)
