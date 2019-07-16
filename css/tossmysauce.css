@@ -25,6 +25,10 @@
     display:inline;
 }
 
+.remove{
+    margin-left: 20px;
+}
+
 .remove:after{
     content: '\2573';
 }

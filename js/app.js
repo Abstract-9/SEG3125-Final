@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
     let data =  loadDB();
-    if(data.signedIn){
-        $('#logout').show();
+    if(!data.signedIn){
+        $('.logout').hide();
     }
 
 
@@ -22,6 +22,10 @@ $(document).ready(function() {
         userField.text(user + "'s Account profile");
         $("#sel1").val(acc.level[userIndex]);
         if(db.sauce) appendSauce($('#sauce2'))
+    }
+
+    if($('p.remove').length){
+        $('.remove').on('click', removePost)
     }
 });
 
@@ -137,5 +141,12 @@ function appendSauce(selector){
 
                 </div></td>
             </tr>`)
+}
+
+function removePost(){
+    let data = loadDB();
+    data.sauce = null;
+    storeDB(data);
+    window.location.reload();
 }
 
