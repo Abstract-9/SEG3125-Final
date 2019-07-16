@@ -1,5 +1,8 @@
 $(document).onload = function() {
 
+    if($('meta[name=customPage]').length){
+
+    }
 
 
 };
@@ -20,8 +23,10 @@ function submitSauce(){
     sauce.name = $("#name").val();
     sauce.desc = $("#comment").val();
     sauce.category = $('input[name=exampleRadios]:checked').val();
-    sauce.tags = abc; //TODO
-
+    sauce.tags = $('#tags');
+    let db = loadDB();
+    db.sauce = sauce;
+    window.location.href='customRecipe.html'
 }
 
 
