@@ -42,6 +42,6 @@
     content: ' \2606'
 }
 
-.account-button, .logout{
+.account-button, .logout, .help-button{
     margin-bottom: 3px;
 }
