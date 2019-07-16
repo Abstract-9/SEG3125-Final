@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+    let data =  loadDB();
+    if(data.signedIn){
+        $('#logout').show();
+    }
+
+
     if($('meta[name=customPage]').length){
         let db = loadDB();
         $('#name').text(db.sauce.name);
@@ -27,6 +33,14 @@ function accountClick(){
     } else {
         window.location.href = "signin.html"
     }
+}
+
+function signOut(){
+    let db = loadDB();
+
+        db.signedIn = false;
+        storeDB(db);
+        window.location.href = "home.html"
 }
 
 function signIn(){
