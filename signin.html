@@ -8,18 +8,21 @@
     <link rel="stylesheet" href="css/tossmysauce.css">
 </head>
 <body>
-<div class="container-fluid banner-container">
+<div class="container-fluid banner-container bg-light p-3">
     <div class="row">
-        <div class="col-10 pt-2">
+        <div class="col-10">
             <h1><a href="home.html" style="text-decoration: none;color:black;">Toss Your Sauce</a></h1>
             <button type="button" class="btn btn-link pt-0" onclick="window.location.href='forum-home.html'">Visit our new forum</button>
         </div>
+
         <div class="col-2 align-self-end">
-            <button type="button" class="btn btn-outline-primary account-button" onclick="accountClick()">My Account</button>
+            <button type="button" class="btn btn-outline-primary account-button float-right" onclick="accountClick()">My Account</button>
+            <button type="button" class="btn btn-outline-secondary logout" onclick="signOut()">Log out</button>
+            <button type="button" class="btn btn-outline-primary help-button">  <a href="help.html">Help</a></button>
         </div>
     </div>
 </div>
-<hr>
+<hr class ="m-0 p-0">
 <div class="container-fluid">
     <div class="row align-items-center pt-5">
         <div class="col pt-5" style="text-align:center">
