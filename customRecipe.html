@@ -13,12 +13,12 @@
 <div class="container-fluid banner-container">
     <div class="row">
         <div class="col-10">
-            <h1>Toss Your Sauce</h1>
-            <button type="button" class="btn btn-link pt-0">Visit our new forum</button>
+            <h1><a href="home.html" style="text-decoration: none;color:black;">Toss Your Sauce</a></h1>
+            <button type="button" class="btn btn-link pt-0" onclick="window.location.href='forum-home.html'">Visit our new forum</button>
         </div>
 
         <div class="col-2 align-self-end">
-            <button type="button" class="btn btn-outline-primary account-button float-right" onclick="signInClick()">My Account</button>
+            <button type="button" class="btn btn-outline-primary account-button float-right" onclick="accountClick()">My Account</button>
         </div>
     </div>
 </div>
@@ -39,34 +39,21 @@
             <thead>
             <tr>
                 <td scope="col">Name </td>
-                <td scope="col"> <h3>Name of Sauce</h3></td>
+                <td scope="col"> <h3 id="name"></h3></td>
             </tr>
             </thead>
 
             <tbody>
                     <tr>
                         <td scope="col">Type of Sauce</td>
-                        <td scope="col"><h5>Type of Sauce</h5></td>
+                        <td scope="col"><h5 id="type"></h5></td>
                     </tr>
                 </tbody>
 
             <thead>
             <tr>
                 <td scope="col">Description</td>
-                <td scope="col">
-                    <p>Ingredients</p>
-                    <li>ingredient</li>
-                    <li>ingredient</li>
-                    <li>ingredient</li>
-                    <li>ingredient</li>
-                    <li>ingredient</li>
-                    <li>ingredient</li>
-                    <li>ingredient</li>
-
-                    <p>Instructions</p>
-                    <br>
-                    <p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-                        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
+                <td scope="col"><p id="desc"></p>
                 </td>
                 
             </tr>
@@ -77,8 +64,7 @@
             <tbody>
             <tr>
                 <td scope="col">Tags</td>
-                <td scope="col">
-                    <p>tag, tag, tag, tag</p>
+                <td scope="col"><p id="tags"></p>
                 </td>
             </tr>
             </tbody>

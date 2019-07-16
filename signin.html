@@ -12,10 +12,10 @@
     <div class="row">
         <div class="col-10 pt-2">
             <h1><a href="home.html" style="text-decoration: none;color:black;">Toss Your Sauce</a></h1>
-            <button type="button" class="btn btn-link pt-0">Visit our new forum</button>
+            <button type="button" class="btn btn-link pt-0" onclick="window.location.href='forum-home.html'">Visit our new forum</button>
         </div>
         <div class="col-2 align-self-end">
-            <button type="button" class="btn btn-outline-primary account-button" onclick="signInClick()">My Account</button>
+            <button type="button" class="btn btn-outline-primary account-button" onclick="accountClick()">My Account</button>
         </div>
     </div>
 </div>
@@ -24,9 +24,11 @@
     <div class="row align-items-center pt-5">
         <div class="col pt-5" style="text-align:center">
             <h1 style="text-align:center">Sign In</h1>
-            <input type="text" class="form-control w-50 username" placeholder="Username">
-            <input type="password" class="form-control w-50 password" placeholder="Password">
-            <button type="button" class="btn btn-primary mt-3 w-25" onclick="">Sign in</button>
+            <input type="text" class="form-control w-50 username" placeholder="Username" id="username">
+            <div class="invalid-feedback">Invalid username</div>
+            <input type="password" class="form-control w-50 password" placeholder="Password" id="password">
+            <div class="invalid-feedback">Invalid password</div>
+            <button type="button" class="btn btn-primary mt-3 w-25" onclick="signIn()">Sign in</button>
             <p class="m-0">Dont have an account?</p><button type="button" class="btn btn-link p-0" onclick="window.location.href='signup.html'">Sign up</button>
         </div>
     </div>

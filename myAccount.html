@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="accountPage">
     <title>TossYourSauce - Create Post</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/tossmysauce.css">
@@ -12,12 +13,12 @@
 <div class="container-fluid banner-container">
     <div class="row">
         <div class="col-10">
-            <h1>Toss Your Sauce</h1>
-            <button type="button" class="btn btn-link pt-0">Visit our new forum</button>
+            <h1><a href="home.html" style="text-decoration: none;color:black;">Toss Your Sauce</a></h1>
+            <button type="button" class="btn btn-link pt-0" onclick="window.location.href='forum-home.html'">Visit our new forum</button>
         </div>
 
         <div class="col-2 align-self-end">
-            <button type="button" class="btn btn-outline-primary account-button float-right">My Account</button>
+            <button type="button" class="btn btn-outline-primary account-button float-right" onclick="accountClick()">My Account</button>
         </div>
     </div>
 </div>
@@ -27,7 +28,7 @@
 
     <br>
     <br>
-    <h1 class = "text-center"> My Account Profile</h1>
+    <h1 class = "text-center" id="user"> Account Profile</h1>
     <br>
 
     <div class = "row w-80 justify-content-center ">
@@ -49,7 +50,6 @@
                     <option>Beginner</option>
                     <option>Casual</option>
                     <option>Expert</option>
-                    <option>Gourmet</option>
                 </select>
             </div>
             </div>
@@ -91,7 +91,7 @@
             </thead>
 
             <tbody>
-            <tr>
+            <tr id="sauce2">
                 <td>
                     <button type="button " class="btn btn-outline-secondary m-2 p-2" ><a class ="text-secondary" href = "viewRecipe.html">Go to Sauce</a></button>
 
@@ -99,7 +99,7 @@
 
                 <td scope="col"><div class="row">
 
-                    <p style="display:inline" class="pr-2">Sauce #1</p>
+                    <p style="display:inline" class="pr-2">Sauce #2</p>
                     <p class="star-black"></p>
                     <p class="star-black"></p>
                     <p class="star-black"></p>
@@ -149,7 +149,7 @@
 
                 <td scope="col"><div class="row">
 
-                    <p style="display:inline" class="pr-2">Sauce #1</p>
+                    <p style="display:inline" class="pr-2">Sauce #2</p>
                     <p class="star-black"></p>
                     <p class="star-black"></p>
                     <p class="star-black"></p>
@@ -199,7 +199,7 @@
 
                 <td scope="col"><div class="row">
 
-                    <p style="display:inline" class="pr-2">Sauce #1</p>
+                    <p style="display:inline" class="pr-2">Sauce #2</p>
                     <p class="star-black"></p>
                     <p class="star-black"></p>
                     <p class="star-black"></p>
